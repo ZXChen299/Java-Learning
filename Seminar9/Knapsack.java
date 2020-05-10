@@ -1,4 +1,5 @@
-package Seminar9;// solve knapsack with dynamic programming
+package Seminar9;
+// solve knapsack with dynamic programming
 // usage java Knapsack W w1 v1 w2 v2 ...
 // W = total weight, wi = weight of item i, vi = value of item i
 // java Knapsack 10 3 6 4 5 5 10 
