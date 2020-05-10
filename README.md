@@ -1,1 +1,3 @@
-# Java-Learning
+# MA 407
+## Java Course
+## Provided by LSE
