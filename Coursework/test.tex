@@ -1,0 +1,33 @@
+\documentclass[a4paper,11pt]{article} %%%%%%%%%%%% start of LaTeX file
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\oddsidemargin -0.54cm
+\textwidth 17.0cm
+\textheight 24cm
+\topmargin -1.3cm
+\parindent 0pt
+\parskip 1ex
+\pagestyle{empty}
+\begin{document} %%%%%%%%%%%% end of LaTeX preamble, start of text
+	\medskip\hrule\medskip
+	\begin{tikzpicture}[scale=2.125]
+	\draw [help lines, color=green] (0,0) grid (8,5) ;
+	\draw [thick] (0,0) node[rounded rectangle] (1) {4};
+	\draw [thick] (1,1) node[draw, rounded rectangle] (2) {2};
+	\draw [thick] (2,0) node[draw, rounded rectangle] (3) {3};
+	\draw [thick] (0,0) node[draw, rounded rectangle] (4) {4};
+	% coordinate 150 in node (150,150) too large
+	\draw [thick] (4,0) node[draw, rounded rectangle] (6) {6};
+	\draw [thick] (5,5) node[draw, rounded rectangle] (7) {7};
+	% coordinate 160 in node (160,1) too large
+	\draw [thick] (8,5) node[rounded rectangle] (9) {10};
+	\draw [thick] (8,5) node[draw, rounded rectangle] (10) {10};
+	\draw [->, thick] (1) to (2);
+	\draw [->, thick] (2) to (3);
+	\draw [->, thick] (3) to (4);
+	\draw [->, thick] (6) to (7);
+	\draw [->, thick] (9) to (10);
+	\end{tikzpicture}
+	\medskip\hrule\medskip
+\end{document}
