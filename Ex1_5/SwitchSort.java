@@ -7,8 +7,7 @@ public class SwitchSort {
     static void switchSort(int[] x){
         int temp = 0;
         int j = 1;
-        boolean completed = false;
-        for(int k = 0; k < x.length; k++ ){
+        for (int k = 0; k < x.length; k++) {
             j++;
             for(int i = x.length-j; i >= 0; i--){
                 if(x[i] > x[i+1]){

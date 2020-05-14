@@ -57,7 +57,6 @@ public class ObjectStack {
         System.out.println( "pop " + stack.pop() );
         System.out.println( "stack: " + stack);
         stack.push(5);
-        int n = (Integer) stack.pop();
     } 
     
 }

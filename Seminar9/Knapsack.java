@@ -88,22 +88,6 @@ public void solve() { // solve Knapsack
         }
 }
 
-private void testprint() {
-    for (int i=0; i<n; i++) {
-        System.out.print (i+1);
-        for (int c = 0; c<=W; c++)
-            if (use[i][c])
-                System.out.print(" P");
-            else
-                System.out.print(" -");
-        System.out.println ();
-        System.out.print (i+1);
-        for (int c = 0; c<=W; c++)
-            System.out.print("_"+mval[i][c]);
-        System.out.println ();
-    }
-}
-
 public static void main(String[] args) {
     if (args.length == 0)
         return;

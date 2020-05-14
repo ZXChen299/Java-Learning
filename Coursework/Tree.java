@@ -22,13 +22,11 @@ public class Tree {
     // Item for binary search tree
     private class Item {
         private int  value;
-        private Item left, right, parent;
+        private Item left, right;
 
-        
         // create a new item with parent p
-        private Item (int x, Item p) { 
-            value = x; 
-            parent = p;
+        private Item(int x, Item p) {
+            value = x;
         }
 
         // a string representation of the item

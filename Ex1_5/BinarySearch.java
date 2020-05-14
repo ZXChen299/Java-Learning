@@ -102,15 +102,10 @@ public class BinarySearch {
         // I only do the test for the three array given by example, and 4 for the first one, 3 & 3 for the remained ones as example
         int len = args.length;
         if( len < 0 ) return;
-        int[] test = input( args );
-        int[] x1 = new int[] { 1,3,6,7,7,7,9 };
-        int[] x2 = largeArray1();
-        int[] x3 = largeArray2();
         // same as example, test the first 4 number in array 1
         System.out.println( "Testing a small array：1 3 6 7 7 7 9" );
         for( int i = 0; i < 4; i++ ){
             found = false;
-            int ans = binsearch( test[i], x1, 0, 6 );
             counter = 0;
         }
         System.out.println();
@@ -118,7 +113,6 @@ public class BinarySearch {
         System.out.println( "Testing a large array with 10000000 entries：0 2 4 6 ... 19999998" );
         for( int i = 4; i < 6; i++ ){
             found = false;
-            int ans =  binsearch( test[i], x2, 0, 9999999 );
             counter = 0;
         }
         System.out.println();
@@ -126,7 +120,6 @@ public class BinarySearch {
         System.out.println( "Testing a large array with 10000000 identical entries：10 10 10 ... 10" );
         for( int i = 6; i < 9; i++ ){
             found = false;
-            int ans =  binsearch( test[i], x3, 0, 9999999 );
             counter = 0;
         }
         System.out.println();

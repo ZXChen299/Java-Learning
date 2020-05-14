@@ -69,18 +69,7 @@ public class Knapsack {
     }
     private int mval[][]; // mval[i][c] = max value for items 0...i-1 up to weight c
     private boolean use[][]; // use[i][c] = use item i for weight c
-    private void testprint() {
-        for(int i = 1; i <= n; i++){
-            for(int j = 0; j <= W; j++)
-                if(!use[i][j]) System.out.print("- ");
-                else System.out.print("P ");
-                System.out.println();
-            for(int j = 0; j <= W; j++)
-                System.out.print(mval[i][j] + " ");
-            System.out.println();
-    }
-
-}
+    
     public static void main(String[] args) {
         Knapsack pack = new Knapsack(args);
         pack.solve();

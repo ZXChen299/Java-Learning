@@ -45,10 +45,6 @@ public class HuffmanTree // Huffmann Tree
     // heap property: A[i].count <= A[2*i].count
     //                A[i].count <= A[2*i+1].count
 
-    private boolean notempty() { // the heap is not empty
-        return size>0; 
-    }
-
     private boolean notsingle() { // the heap has more than one element
         return size>1; 
     }

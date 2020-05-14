@@ -53,15 +53,13 @@ public class GenericStack <ValueType> {
         System.out.println( "stringStack: " + stringStack);
         System.out.println( "pop " + stringStack.pop() );
         System.out.println( "stringStack: " + stringStack);
-        String s = stringStack.pop();
         System.out.println();
         doubleStack.push(1.1);
         doubleStack.push(2.2);
         doubleStack.push(3.3);
         System.out.println( "doubleStack: " + doubleStack);
         System.out.println( "pop " + doubleStack.pop() );
-        System.out.println( "doubleStack: " + doubleStack);
-        double d = doubleStack.pop();
+        System.out.println("doubleStack: " + doubleStack);
     } 
     
 }
